@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sexo{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+table {
+    width: 95%; /* Se ajusta automáticamente al tamaño de la pantalla */
+    max-width: 1000px;
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    color: #F4F4F9;
+    transition: background-color 0.3s ease;
+}
+
+td:hover {
+    background-color: #903749; /* Cambio de color al pasar el ratón */
+}
+
+img {
+    width: 100%;
+    height: 200px; /* Ajusta esta altura según lo necesites */
+    border-radius: 10px;
+    object-fit: cover; /* Hace que las imágenes se ajusten uniformemente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.descripcion {
+    background-color: #E84545;
+    color: #F4F4F9;
+    padding: 10px;
+    margin-top: 8px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Estilo para tabletas: dos columnas y seis filas */
+@media (min-width: 768px) and (max-width: 1024px) {
+    table {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+        gap: 15px;
+    }
+    td {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        border: none; /* Elimina bordes en modo grid */
+    }
+}
+
+/* Ajustes para pantallas más pequeñas (móviles) */
+@media (max-width: 767px) {
+    table {
+        display: grid;
+        grid-template-columns: 1fr; /* Una columna en móviles */
+        gap: 15px;
+    }
+    td {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+    }
+    .descripcion {
+        margin-top: 10px;
+    }
+}
