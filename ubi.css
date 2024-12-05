@@ -1,0 +1,74 @@
+
+
+/* Contenedor principal
+.ipone {
+    
+    padding-top: 100px;
+    width: 97vw;
+    padding: 20px;
+    /*background: rgba(224, 203, 158, 0.932);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+} 
+.ipone{
+    background-color: rgba(224, 203, 158, 0.932);
+    padding-top: 20px;
+}
+/* Título principal */
+.ipone h1 {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Contenedor del mapa e información */
+.mapa-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilos del mapa */
+.mapa {
+    flex: 1 1 60%;
+    min-height: 300px;
+    border: 2px solid #0077b6;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Estilos de la información */
+.informacion {
+    flex: 1 1 35%;
+    background: #485a64;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.informacion p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.informacion a {
+    color: #0077b6;
+    text-decoration: none;
+}
+
+.informacion a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mapa-info {
+        flex-direction: column;
+    }
+
+    .mapa, .informacion {
+        flex: 1 1 100%;
+    }
+}
